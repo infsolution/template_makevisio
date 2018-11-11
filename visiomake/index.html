@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VisioMake</title>
+	<link href="templates/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="templates/font-awesome/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+	<audio src="templates/sounds/links.mp3" id="links"></audio>
+    <audio src="templates/sounds/content.mp3" id="content"></audio>
+    <audio src="templates/sounds/banner.mp3" id="banner"></audio>
+    <div class="jumbotron" onmouseenter="lista_link('banner')">
+    	<div class="container-fluid">
+    		<h1 class="display-4">VISIOMAKE</h1>
+			<p class="lead">Plataforma para auxilio a deficientes visuais</p>
+    	</div>
+    </div>
+	<div class="container-fluid">
+		<div class="row" >
+			<div class="col-4" onmouseenter="lista_link('links')" id="links">
+				<h2><a href="#" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">LINKS</a></h2>
+			</div>
+			<div class="col-8" onmouseenter="lista_link('content')" id="content">
+				<h2><a href="#" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">CONTEÚDO</a></h2>
+			</div>
+		</div>
+		
+	</div>
+
+	<script src="templates/jquery/dist/jquery.js"></script>
+	<script src="templates/popper.js/dist/umd/popper.min.js"></script>
+	<script src="templates/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="templates/js/actions.js" ></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.card-img-top{
+        		height: 10rem;
+        		width: 10rem;
+        		object-fit: cover;
+        	}
+
+.navbar{
+	padding-top: 1rem;
+	border: none;
+	height: 5rem;
+}
+
+.card{
+	width: 70rem;
+	height: 10rem;
+	border: none
+}
+
+footer.footer {
+background-color: #337ab7;
+border-color: #2e6da4;
+margin-top: 55px;
+color: white;
+border-radius: 5px;
+}
+footer.footer p {
+padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+ #mob-hind {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+ #mob-hind {
+    display: none;
+  }
+
+}
