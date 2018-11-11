@@ -11,18 +11,22 @@
 	<audio src="visiomake/sounds/links.mp3" id="links"></audio>
     <audio src="visiomake/sounds/content.mp3" id="content"></audio>
     <audio src="visiomake/sounds/banner.mp3" id="banner"></audio>
-    <div class="jumbotron" onmouseenter="lista_link('banner')">
-    	<div class="container-fluid">
-    		<h1 class="display-4">VISIOMAKE</h1>
-			<p class="lead">Plataforma para auxilio a deficientes visuais</p>
-    	</div>
-    </div>
+    
 	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron" onmouseenter="lista_link('banner')">
+		    		<h1 class="display-4">VISIOMAKE</h1>
+					<p class="lead">Plataforma para auxilio a deficientes visuais</p>
+    			</div>
+			</div>
+			
+		</div>
 		<div class="row" >
-			<div class="col-4" onmouseenter="lista_link('links')" id="links">
+			<div class="col-md-4" onmouseenter="lista_link('links')" id="links">
 				<h2><a href="#" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">LINKS</a></h2>
 			</div>
-			<div class="col-8" onmouseenter="lista_link('content')" id="content">
+			<div class="col-md-8" onmouseenter="lista_link('content')" id="content">
 				<h2><a href="#" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">CONTEÚDO</a></h2>
 			</div>
 		</div>
