@@ -11,11 +11,12 @@
 	<audio src="visiomake/sounds/links.mp3" id="links"></audio>
     <audio src="visiomake/sounds/content.mp3" id="content"></audio>
     <audio src="visiomake/sounds/banner.mp3" id="banner"></audio>
+    <audio src="visiomake/sounds/content-resume.mp3" id="content-resume"></audio>
     
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="jumbotron" onmouseenter="lista_link('banner')">
+				<div class="jumbotron" onmouseenter="audio_desc('banner')">
 		    		<h1 class="display-4">VISIOMAKE</h1>
 					<p class="lead">Plataforma para auxilio a deficientes visuais</p>
     			</div>
@@ -23,12 +24,64 @@
 			
 		</div>
 		<div class="row" >
-			<div class="col-md-4" onmouseenter="lista_link('links')" id="links">
+			<div class="col-md-4" onmouseenter="audio_desc('links')" id="links">
 				<h2><a href="#" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">LINKS</a></h2>
+				<span onmouseenter="audio_desc('content-resume')" onclick="show_content('resume','resume_back')" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">RESUMO</span>
+				<span onmouseenter="audio_desc('content-resume')" onclick="show_content('resume','objective')" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">OBJETIVO</span>
+				<span onmouseenter="audio_desc('content-resume')" onclick="show_content('resume','hipotese')" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">HIPÓTESE</span>
+				<span onmouseenter="audio_desc('content-resume')" onclick="show_content('resume','review')" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">REVISÃO DE LITERATURA</span>
+				<span onmouseenter="audio_desc('content-resume')" onclick="show_content('resume','metodologic')" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">METODOLOGIA</span>
+				<span onmouseenter="audio_desc('content-resume')" onclick="show_content('resume','references')" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">REFERÊNCIAS</span>
+
 			</div>
-			<div class="col-md-8" onmouseenter="lista_link('content')" id="content">
+			<div class="col-md-8" onmouseenter="audio_desc('content')" id="content">
 				<h2><a href="#" class="btn btn-primary btn-lg  btn-block active" role="button" aria-pressed="true">CONTEÚDO</a></h2>
+				<span id="resume">
+					<p>
+						A acessibilidade e usabilidade de sites de forma geral tem sido tema de grande preocupação para órgãos como a W3C, que tentam garantir a inclusão digital, além de órgãos governamentais que criam legislações nesse sentido. Com tudo as próprias páginas de sites de todas as esferas de governo não se adequam a esses preceitos de universalidade do acesso, ainda mais as páginas não atingidas pela legislação.
+					</p>
+					<p>
+						Este trabalho busca levantar, com base na literatura, os principais pontos que dificultam a acessibilidade de pessoas portadoras de deficiência visual ao ambiente web, mesmo com o auxílio de tecnologias assistivas como os leitores de tela. A partir da posse dos dados necessários,  busca-se avaliar o uso dessas ferramentas por voluntários deficientes visuais na tentativa de identificar quais as principais limitações dos leitores de tela e, baseado em todas as variáveis,  pretende-se implementar uma plataforma web que realize a conversão de páginas para exibi-las, de forma adequada, aos deficientes visuais. 
+
+					</p>
+				</span>
+				<span id="resume_back" style="display: none">
+					<p>
+						A acessibilidade e usabilidade de sites de forma geral tem sido tema de grande preocupação para órgãos como a W3C, que tentam garantir a inclusão digital, além de órgãos governamentais que criam legislações nesse sentido. Com tudo as próprias páginas de sites de todas as esferas de governo não se adequam a esses preceitos de universalidade do acesso, ainda mais as páginas não atingidas pela legislação.
+					</p>
+					<p>
+						Este trabalho busca levantar, com base na literatura, os principais pontos que dificultam a acessibilidade de pessoas portadoras de deficiência visual ao ambiente web, mesmo com o auxílio de tecnologias assistivas como os leitores de tela. A partir da posse dos dados necessários,  busca-se avaliar o uso dessas ferramentas por voluntários deficientes visuais na tentativa de identificar quais as principais limitações dos leitores de tela e, baseado em todas as variáveis,  pretende-se implementar uma plataforma web que realize a conversão de páginas para exibi-las, de forma adequada, aos deficientes visuais. 
+
+					</p>
+				</span>
+				<span id="objective" style="display: none;">
+					<p>Desenvolver um sistema web para a conversão de sites exibindo-os de forma acessível a deficientes visuais sem a necessidade de usarem leitores de tela.</p>
+					<p>
+						Elencar as principais barreiras impostas pelos web sites aos deficientes visuais. 
+						Analisar junto aos deficientes a melhor forma de interação com sistemas webs.
+						Desenvolver uma plataforma que promova o acesso ao conteúdo de sites até então inacessível para deficientes visuais   
+
+					</p>
+				</span>
+				<span id="hipotese" style="display: none;">
+					<p>
+						Estima-se que, com base no levantamento das reais barreiras impostas aos deficientes visuais pela falta de adequação de sites às diretrizes de acessibilidade da W3C e o descumprimento total ou em parte ao Decreto 5.296/04 por sites governamentais, a partir do uso de ferramentas automatizadas de análise de sites quanto à conformidade às normas e guidelines e de teste práticos realizados com deficientes, possa ser desenvolvido uma aplicação web que converta esses sites a um formato de exibição acessível aos deficientes visuais com cegueira total.
+
+					</p>
+				</span>
+				<span id="review" style="display: none;">
+					
+				</span>
+				<span id="metodologic" style="display: none;">
+					<p>
+						Seŕão levantadas informaçẽos detalhadas sobre os leitores de telas existentes no mercado, suas vantagens e limitações, assim como as falhas encontradas na páginas web a partir da literatura existente. Será realizado testes com usuários deficientes visuais habituados a utilizarem o leitores de tela para navegar na web buscando encontrar suas principais dificuldades e limitações das ferramentas.  
+					</p>
+				</span>
+				<span id="references" style="display: none;">
+					
+				</span>
 			</div>
+			
 		</div>
 		
 	</div>
